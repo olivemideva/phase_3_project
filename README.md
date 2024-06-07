@@ -54,13 +54,19 @@ In the evaluation stage, we looked at how well each model performed. The tuned R
 
 ![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20025633.png).
 
+According to the confusion matrix we have 237 True Negatives, 13 False Positives, 26 False Negatives and 218 True Positives. The model correctly predicted 237 instances of employees staying (TN), 218 instances of employees leaving (TP), 13 instances where it incorrectly predicted an employee staying when they actually left (FP), and 26 instances where it incorrectly predicted an employee leaving when they actually stayed (FN)
+
 ### ROC Curve
 
 ![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20025710.png).
 
+With an AUC (Area Under the Curve) of 0.97, the ROC curve demonstrates excellent discriminative ability. It ascends steeply on the left, indicating that the True Positive Rate increases rapidly with minimal False Positive Rate, reflecting the model's ability to correctly identify positive cases while keeping false alarms low. However, the curve then sharply moves towards the upper-right corner, it implies a sudden increase in the False Positive Rate, possibly suggesting a threshold where the model becomes more liberal in classifying cases as positive. Despite this sudden rise, the overall AUC value of 0.97 signifies strong predictive performance and effective discrimination between positive and negative cases.
+
 ### Feature against Importance tuned model
 
 ![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20024241.png).
+
+This plot shows which columns were given priority or rather have high importance in making the model, therefore these columns have high impact on the target column.
 
 ## Recommendations
 
