@@ -28,6 +28,30 @@ The dataset is sourced from Kaggle and it  provides valuable employee informatio
 
 Here we prepared the dataset by encoding categorical variables and addressing class imbalance using SMOTE. In feature selection, we treated employee attrition as the target variable, while all other variables were considered as features. This approach helped us identify the most relevant features for predicting employee attrition while excluding the target variable from the feature selection process. 
 
+### Class imbalance
+
+![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20120436.png).
+
+The above visualization shows there's class imbalance in the dataset with Yes as minority and No as majority
+
+### Checking for outliers
+
+![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20120759.png).
+
+The dataset had outliers that weren't removed because that could affect the accuracy because they are important values needed for the dataset. Removing values from the columns 'TotalWorkingYears' and 'YearsAtCompany' will lead to loss of valuable information.
+
+### Pair plot
+
+![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20120825.png).
+
+The above explores the relationships between pairs of numerical features and attrition.
+
+### Bar plot
+
+![image](https://github.com/olivemideva/phase_3_project/blob/main/Images/Screenshot%202024-06-07%20120839.png).
+
+The above helps to see how categorical features like BusinessTravel, Department, and EducationField vary across the target variable.
+
 ## Modelling
 
 In our modeling phase, we tried out three different approaches: Decision Trees as the baseline model, Random Forests, and a tuned version of the Random Forest. We wanted to see which one could best predict whether an employee would stay or leave the company.
