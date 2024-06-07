@@ -1,5 +1,3 @@
-# Phase 3 Project 
-
 # Keeping IBM Talent : Insights into Employee Retention
 
 ## Overview
