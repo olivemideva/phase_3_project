@@ -92,6 +92,11 @@ This plot shows which columns were given priority or rather have high importance
 
 ## Recommendations
 
+### Model Recommendation
+Based on the evaluation of three models—Decision Tree Classifier, Random Forest Classifier, and Random Forest Classifier with SMOTE and Hyperparameter Tuning—the Random Forest Classifier with SMOTE and Hyperparameter Tuning is recommended. This model achieved the highest accuracy of 92.1% and demonstrated balanced precision and recall for the minority class (employees likely to leave), with both metrics around 92%. In comparison, the Decision Tree Classifier had lower accuracy (78.2%) and poor recall for the minority class (18%), while the untuned Random Forest Classifier, despite higher accuracy (87.4%), had a very low recall (8%) for the minority class. The chosen model effectively handles class imbalance through SMOTE and benefits from optimized hyperparameters, making it the most reliable for identifying at-risk employees and informing retention strategies.
+
+### Recommendations to stakeholder
+
 Based on the feature importance analysis, several recommendations can be made to improve employee retention:
 
 1. Focus on Stock Option Programs: Companies should consider enhancing or introducing stock option programs to incentivize employees to stay with the organization longer.
